@@ -184,7 +184,7 @@ tasks.named('jar', Jar).configure {
             'Implementation-Title'    : project.name,
             'Implementation-Version'  : project.jar.archiveVersion,
             'Implementation-Vendor'   : mod_authors,
-            'MixinConfigs': 'mixins.examplemod.json'
+            'MixinConfigs': mixin.configNames.join(',')
         ])
     }
 }
